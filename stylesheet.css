@@ -1,0 +1,125 @@
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+
+  body {
+    line-height: 1.6;
+  }
+
+
+  header {
+    background: url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    position: relative;
+  }
+
+
+  header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+
+  header h1, header p, .cta-button {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+
+  header p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+  }
+
+
+  .cta-button {
+    background: #e67e22;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: #ecf0f1;
+  }
+
+
+  .feature {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 20px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+
+  .feature i {
+    color: #e67e22;
+    margin-bottom: 10px;
+  }
+
+
+  .feature h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+
+  .feature p {
+    font-size: 0.95rem;
+    color: #444;
+  }
+
+
+  footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+
+  footer p {
+    margin: 10px 0;
+  }
+
+
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+
+
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
